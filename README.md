@@ -40,6 +40,10 @@
 
 点击确认，重启计算机
 
+## 具体的教程见博客
+
+http://www.maxlicheng.com/?p=197
+
 ## 许可
 
 The MIT License
