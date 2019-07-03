@@ -42,7 +42,7 @@
 
 ## 具体的教程见博客
 
-http://www.maxlicheng.com/?p=197
+https://www.maxlicheng.com/openwrt/216.html
 
 ## 许可
 
