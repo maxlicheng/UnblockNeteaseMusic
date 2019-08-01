@@ -7,7 +7,7 @@
 ## 说明
 
 注：fork了此项目在windows系统自用
-添加了三个脚本和一个快捷方式，方便使用。
+添加了三个脚本，方便使用。
 
 ## 特性
 
@@ -41,8 +41,7 @@
 点击确认，重启计算机
 
 ## 具体的教程见博客
-
-https://www.maxlicheng.com/openwrt/216.html
+- [《Win10系统解锁网易云音乐灰色歌曲》](https://www.maxlicheng.com/github/197.html)
 
 ## 许可
 
