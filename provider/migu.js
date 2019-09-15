@@ -9,7 +9,7 @@ let headers = {
 
 const search = info => {
 	let url =
-		'http://m.10086.cn/migu/remoting/scr_search_tag?' +
+		'http://m.music.migu.cn/migu/remoting/scr_search_tag?' +
 		'keyword=' + encodeURIComponent(info.keyword) + '&type=2&rows=20&pgc=1'
 
 	return request('GET', url)
@@ -30,8 +30,9 @@ const track = id => {
 	return request('GET', url, headers)
 	.then(response => response.json())
 	.then(jsonBody => {
-		if('walkmanInfo' in jsonBody)
-			return encodeURI(jsonBody.walkmanInfo.playUrl)
+		let playInfo = [/*'sqPlayInfo'*/, 'hqPlayInfo', 'bqPlayInfo'].find(key => (key in jsonBody.data) && jsonBody.data[key].playUrl)
+		if(playInfo)
+			return encodeURI(jsonBody.data[playInfo].playUrl)
 		else
 			return Promise.reject()
 	})
